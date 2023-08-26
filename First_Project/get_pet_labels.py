@@ -22,7 +22,7 @@ def get_pet_labels(image_dir):
     filename_list = listdir(image_dir)
     
     for i in range(len(filename_list)):
-       if filename_list[i][0] != ".":
+       if filename_list[i][0] != "." and filename_list[i] not in results_dic:
           words_list = filename_list[i].lower().split('_')
           pet_label = ''
 
@@ -31,9 +31,7 @@ def get_pet_labels(image_dir):
                   pet_label += word + ' '
                   
           pet_label = pet_label.strip()
-
-          if filename_list[i] not in results_dic:
-              results_dic[filename_list[i]] = [pet_label]
+          results_dic[filename_list[i]] = [pet_label]
     
 
 
