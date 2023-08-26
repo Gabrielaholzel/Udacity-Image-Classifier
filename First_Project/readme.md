@@ -43,10 +43,24 @@ We continue calling the function `check_classifying_images` that checks results 
 check_classifying_images(results)
 ```
 
-Now we define `adjust_results4_isadog` function within the file `adjust_results4_isadog.py`. This function adjusts the results dictionary to determine if classifier correctly classified images as 'a dog' or 'not a dog'. This demonstrates if the model can correctly classify dog images as dogs (regardless of breed)
+Now we call `adjust_results4_isadog` function within the file `adjust_results4_isadog.py`. This function adjusts the results dictionary to determine if classifier correctly classified images as 'a dog' or 'not a dog'. This demonstrates if the model can correctly classify dog images as dogs (regardless of breed)
+```
+print_results(results, results_stats, in_arg.arch, True, True)
+```
 
+Once this is over, we measure total program runtime by collecting end time.
+```
+end_time = time()
+```
 
-
+Finally, we compute the overall runtime in seconds and print it:
+```
+    tot_time = end_time - start_time
+    print("\n** Total Elapsed Runtime:",
+          str(int((tot_time/3600)))+":"+str(int((tot_time%3600)/60))+":"
+          +str(int((tot_time%3600)%60)) 
+          )
+```
 
 
 
