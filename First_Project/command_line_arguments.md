@@ -7,7 +7,7 @@ This is the only function inside this file. With this function, I use `argparse`
 This code will input the three command line arguments from the user.
 
 ### Check the code
-The `check_command_line_arguments` function within `check_images.py` will check the code.
+The `check_command_line_arguments` function within [`check_images.py`][file] will check the code.
 Test the following:
 * Entering no command line arguments when you run check_image.py from the terminal window. This should result in the default values being printed.
 * Entering in values of your choice for the command line arguments when you run check_image.py from the terminal window. This should result in the values you entered being printed.
@@ -72,8 +72,8 @@ python check_images.py --dir pet_images/
 
 
 
-
 [//]: ()
+[file]: <https://github.com/Gabrielaholzel/Udacity-Image-Classifier/blob/ae425a0b76c6a2656d0de03ab3804c4ac595e94e/First_Project/get_input_args.py>
 [arparse]: <https://docs.python.org/3/library/argparse.html#argparse.ArgumentParser>
 [add_argument]: <https://docs.python.org/3/library/argparse.html#adding-arguments>
 [arg_parse_method]: <https://docs.python.org/3/library/argparse.html#the-parse-args-method>
