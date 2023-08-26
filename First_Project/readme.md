@@ -24,7 +24,7 @@ The first thing to do is measure total program runtime by collecting start time:
 start_time = time()
 ```
 
-Then, we define `get_input_args` function within the file [`get_input_args.py`][cla]. This function retrieves three Command Line Arugments from user as input from the user running the program from a terminal window. This function returns the collection of these command line arguments from the function call as the variable `in_arg`.
+Then, we define `get_input_args` function within the file `get_input_args.py`(explanation of file [here][cla]). This function retrieves three Command Line Arugments from user as input from the user running the program from a terminal window. This function returns the collection of these command line arguments from the function call as the variable `in_arg`.
 ```
 in_arg = get_input_args()
 ```
