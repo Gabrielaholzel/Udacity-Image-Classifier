@@ -7,8 +7,6 @@
 
 Hello, and welcome to my GitHub repository! I'm thrilled to share my journey and the culmination of my hard work during the [Udacity Nanodegree Program][udacity], an AWS AI & ML Scholarship sponsored by [AWS][aws]. This certification not only represents my dedication to learning but also showcases my passion for all things related to Artificial Intelligence and Machine Learning.
 
-## About the Certification
-This certification is a significant milestone in my career as a Data Engineer. Through the AWS AI & ML Scholarship program, I've acquired a solid understanding of AWS services tailored for AI and ML, enabling me to harness the full potential of cloud-based machine learning infrastructure.
 
 ## Project Notebook
 In this repository, you'll find a project notebook that epitomizes my hands-on experience with AWS AI and ML. This notebook delves into the nitty-gritty of one of the projects I undertook during the program. It encapsulates:
@@ -17,6 +15,14 @@ In this repository, you'll find a project notebook that epitomizes my hands-on e
 * **Code Samples**: You'll find code snippets and scripts that demonstrate how I tackled various aspects of the project. I've strived to make the code both readable and well-documented.
 * **Documentation**: The notebook is rich in documentation, explaining my thought processes, decisions, and the rationale behind my choices. It's not just about the "how" but also the "why."
 
+## About This Repository
+This GitHub repository houses my project notebook and certification for the AWS AI & ML Scholarship program, sponsored by AWS. The skills and knowledge I gained during this program complement the foundation I built in the Artificial Intelligence with Python Nanodegree.
+
+Feel free to explore my projects and certification to get a sense of my journey in the world of AI and machine learning. If you have any questions or would like to discuss any aspect of my certification, projects, or the concepts covered in the nanodegree, please don't hesitate to reach out.
+
+Thank you for visiting, and I look forward to [connecting][linkedin] with you!
+
+
 
 
 
@@ -24,3 +30,4 @@ In this repository, you'll find a project notebook that epitomizes my hands-on e
 [//]: # (Links)
 [aws]: <https://aws.amazon.com/es/machine-learning/scholarship/>
 [udacity]: <https://www.udacity.com/course/ai-programming-python-nanodegree--nd089>
+[linkedin]: <https://www.linkedin.com/in/gabrielaholzel/>
