@@ -277,6 +277,8 @@ plt.show(
 
 As a result of the previous code, we get the following prediction:
 ![imshow](https://github.com/Gabrielaholzel/Udacity-Image-Classifier/blob/af95cde5a63daa22cc51b1eb499e2b8a740ee1bb/Second_Project/imshow.png)
+
+
 ![imshow](https://github.com/Gabrielaholzel/Udacity-Image-Classifier/blob/57eb6f08cdbe62976e322e5e8ac34e6d98860993/Second_Project/prediction.png)
 
 <p align="center">
