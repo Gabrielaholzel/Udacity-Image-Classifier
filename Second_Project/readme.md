@@ -277,9 +277,12 @@ plt.show(
 
 As a result of the previous code, we get the following prediction:
 ![imshow](https://github.com/Gabrielaholzel/Udacity-Image-Classifier/blob/af95cde5a63daa22cc51b1eb499e2b8a740ee1bb/Second_Project/imshow.png)
-![imshow](https://github.com/Gabrielaholzel/Udacity-Image-Classifier/blob/d9b5666c8ca9c2fce3588c26b47582980fda7eec/Second_Project/prediction.png)
+![imshow](https://github.com/Gabrielaholzel/Udacity-Image-Classifier/blob/57eb6f08cdbe62976e322e5e8ac34e6d98860993/Second_Project/prediction.png)
 
-
+<p align="center">
+  <img src="https://github.com/Gabrielaholzel/Udacity-Image-Classifier/blob/af95cde5a63daa22cc51b1eb499e2b8a740ee1bb/Second_Project/imshow.png" width="350">
+  <img src="https://github.com/Gabrielaholzel/Udacity-Image-Classifier/blob/57eb6f08cdbe62976e322e5e8ac34e6d98860993/Second_Project/prediction.png" width="350">
+</p>
 
 
 
