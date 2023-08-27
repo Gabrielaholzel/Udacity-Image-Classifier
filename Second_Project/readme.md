@@ -214,18 +214,70 @@ def process_image(image_path):
     return np_image
 ```
 To check the function, a new function was provided. This function converts a PyTorch tensor and displays it in the notebook. If `process_image` function worked, running the output through the provided function should return the original image (except for the cropped out portions).
+```python
+image_path = valid_dir + '/101/image_07951.jpg'
+img = process_image(image_path)
+imshow(img)
+```
 
 ![imshow](https://github.com/Gabrielaholzel/Udacity-Image-Classifier/blob/af95cde5a63daa22cc51b1eb499e2b8a740ee1bb/Second_Project/imshow.png)
 
-
-
-
+```python
+process_image(image_path)
+processed_image = Image.open(image_path)
+processed_image
+```
+![imshow](https://github.com/Gabrielaholzel/Udacity-Image-Classifier/blob/d9b5666c8ca9c2fce3588c26b47582980fda7eec/Second_Project/process_image.png)
 
 * **Making predictions**: The model is used to predict the class probabilities for a given input image.
+This method should takes a path to an image and a model checkpoint, then return the probabilities and classes.
+
+```python
+def predict(image_path, model, topk=5):
+    # Process the image using the process_image function
+    image = process_image(image_path)
+    # image = image.transpose((1, 2, 0))
+    image_tensor = torch.FloatTensor(image).unsqueeze(0)  # Add batch dimension
+
+    # Set the model to evaluation mode
+    model.eval()
+
+    # Use the model to make predictions
+    with torch.no_grad():
+        output = model(image_tensor)
+
+    # Calculate class probabilities and retrieve top K classes
+    probabilities, indices = torch.topk(torch.softmax(output, dim=1), topk)
+    probabilities = probabilities.squeeze().numpy()
+    indices = indices.squeeze().numpy()
+
+    # Convert indices to class labels using the model's class_to_idx attribute
+    idx_to_class = {idx: class_label for class_label, idx in model.class_to_idx.items()}
+    top_classes = [idx_to_class[idx] for idx in indices]
+
+    return probabilities, top_classes
+```
 
 * **Mapping class indices to class names**: A mapping between class indices and class names is used to interpret model outputs.
 
+```python
+model = uploaded_model 
+img = process_image(image_path)
+imshow(img)
+plt.show()
+probs, classes = predict(image_path, model, 5)
 
+class_names = [cat_to_name [item] for item in classes]
+
+plt.figure(figsize = (6,10))
+plt.subplot(2,1,2)
+sns.barplot(x=probs, y=class_names, color= 'green');
+plt.show(
+```
+
+As a result of the previous code, we get the following prediction:
+![imshow](https://github.com/Gabrielaholzel/Udacity-Image-Classifier/blob/af95cde5a63daa22cc51b1eb499e2b8a740ee1bb/Second_Project/imshow.png)
+![imshow](https://github.com/Gabrielaholzel/Udacity-Image-Classifier/blob/d9b5666c8ca9c2fce3588c26b47582980fda7eec/Second_Project/prediction.png)
 
 
 
