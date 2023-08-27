@@ -275,16 +275,9 @@ sns.barplot(x=probs, y=class_names, color= 'green');
 plt.show(
 ```
 
-As a result of the previous code, for the same image:
-
-![imshow](https://github.com/Gabrielaholzel/Udacity-Image-Classifier/blob/af95cde5a63daa22cc51b1eb499e2b8a740ee1bb/Second_Project/imshow.png)
-
-We get the following prediction:
-![imshow](https://github.com/Gabrielaholzel/Udacity-Image-Classifier/blob/57eb6f08cdbe62976e322e5e8ac34e6d98860993/Second_Project/prediction.png)
-
 <p align="center">
-  <img src="https://github.com/Gabrielaholzel/Udacity-Image-Classifier/blob/af95cde5a63daa22cc51b1eb499e2b8a740ee1bb/Second_Project/imshow.png" width="250" height="250">
-  <img src="https://github.com/Gabrielaholzel/Udacity-Image-Classifier/blob/57eb6f08cdbe62976e322e5e8ac34e6d98860993/Second_Project/prediction.png" width="250" height="250">
+  <img src="https://github.com/Gabrielaholzel/Udacity-Image-Classifier/blob/af95cde5a63daa22cc51b1eb499e2b8a740ee1bb/Second_Project/imshow.png" width="350" height="250">
+  <img src="https://github.com/Gabrielaholzel/Udacity-Image-Classifier/blob/57eb6f08cdbe62976e322e5e8ac34e6d98860993/Second_Project/prediction.png" width="350" height="250">
 </p>
 
 
