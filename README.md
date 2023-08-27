@@ -7,6 +7,17 @@
 
 Hello, and welcome to my GitHub repository! I'm thrilled to share my journey and the culmination of my hard work during the [Udacity Nanodegree Program][udacity], an AWS AI & ML Scholarship sponsored by [AWS][aws]. This certification not only represents my dedication to learning but also showcases my passion for all things related to Artificial Intelligence and Machine Learning.
 
+### Key Topics Covered:
+
+* Supervised Learning
+* Deep Learning with TensorFlow and PyTorch
+* Unsupervised Learning
+* Deep Reinforcement Learning
+* AI in Healthcare
+* Natural Language Processing (NLP)
+* Computer Vision
+* Deploying Machine Learning Models
+* Capstone Project
 
 ## Project Notebook
 In this repository, you'll find a project notebook that epitomizes my hands-on experience with AWS AI and ML. This notebook delves into the nitty-gritty of one of the projects I undertook during the program. It encapsulates:
