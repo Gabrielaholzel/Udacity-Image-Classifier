@@ -13,7 +13,7 @@ To create the _labels_ for pet images, it is needed to:
 
 In the first task, reads the filenames from a folder. To achieve this task the [listdir][listdir] method from the [os python module][os] was imported. The _listdir_ method retrieves all filenames from the files within a folder. These filenames are returned from listdir as a list. The code below demonstrates how to perform this import and retrieval.
 
-```
+```python
 ## Imports only listdir function from OS module 
 from os import listdir  
 
@@ -65,11 +65,11 @@ The following string functions are used to achieve the label format:
 This section is about the function `get_pet_labels` within [`get_pet_labels.py`][file]. This function creates the labels for the pet images, using the filenames of the pet images in the _pet_images_ folder. These images filenames represent the identity of the pet in the image. The pet image labels are considered to represent the "truth" about the classification of the image. The function takes as input the _image_dir_ string, which is the full path to the folder of images that are to be classified, and returns the results dictionary that will contain the pet image filenames and labels. 
 
 Let's start by creating an empty dictionary named _results_dic_.
-```
+```python
 results_dic = {}
 ```
 Now, let's retrieve the filenames from folder _image_dir_ and save it in a variable called _filename_list_.
-```
+```python
     filename_list = listdir(image_dir)
 ```
 Now we add new key-value pairs to dictionary ONLY when key doesn't already exist. For each element inside the _filename_list_ variable, we first check that it doesn't start with a dot (.) due to the workspace's conditions. 
@@ -79,7 +79,7 @@ After that, for every string in the list we check if it only contains alphabetic
 
 Finally, we append to the `results_dic`  the element of the `filename_list` as the key, and `pet_label` as the value. 
 
-```
+```python
 for i in range(len(filename_list)):
    if filename_list[i][0] != "." and filename_list[i] not in results_dic:
       words_list = filename_list[i].lower().split('_')
